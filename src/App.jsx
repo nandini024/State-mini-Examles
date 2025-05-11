@@ -8,14 +8,16 @@ import Login_signup from './Components/Login_Signup/Login_signup';
 
 import Home from './Components/Home/Home';
 import Randomflag from './Components/Random_Flag/Randomflag.jsx';
+import Navbar from './Components/Navbar/Navbar.jsx';
 
 export default class App extends Component {
   render() {
     return (
       <div>
-      
+      <Navbar/>
         <Routes>
           <Route path='/' element={<Home/>}/>
+          
        
           <Route path='/counterapp' element={<State_example1 />} />
           <Route path='/randomcolor' element={<State_example2 />} />
