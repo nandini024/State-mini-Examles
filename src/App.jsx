@@ -13,8 +13,9 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <Home/>
+      
         <Routes>
+          <Route path='/' element={<Home/>}/>
        
           <Route path='/counterapp' element={<State_example1 />} />
           <Route path='/randomcolor' element={<State_example2 />} />
